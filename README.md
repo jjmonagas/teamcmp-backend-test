@@ -74,7 +74,7 @@ This is a Symfony4 project with its new directory structure:
 * /src/Services/ --> Symfony services
 * /src/Utils/ --> Helpers and Factories
 * /tests --> Unit and Functional tests code
-*/feed-exports --> Test files directory
+* /feed-exports --> Test files directory
 
 ## My first time writing a unit/functional tests, using PHPUnit Testing Framework for Symfony
 
