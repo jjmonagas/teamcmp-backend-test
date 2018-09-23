@@ -7,66 +7,59 @@
 ## Installation
 
 ```
-git clone 
+git clone https://github.com/jjmonagas/teamcmp-backend-test.git
 cd teamcmp-backend-test/
 composer install
 ```
 
 ## Usage
 
-##### Import Glorf videos 
 ```
 cd teamcmp-backend-test/
+```
+
+##### Import Glorf videos 
+```
 php bin/console teamcmp:import-videos glorf
 ```
 
 ##### Import Flub videos 
 ```
-cd teamcmp-backend-test/
 php bin/console teamcmp:import-videos flub
 ```
 
 ##### Import Glorf videos dynamic PATH and FILENAME 
 ```
-cd teamcmp-backend-test/
 php bin/console teamcmp:import-videos glorf --path=/feed-exports --filename=glorf.json
 ```
 
 ##### Import Flub videos dynamic PATH and FILENAME (shortcuts -p -f)
 ```
-cd teamcmp-backend-test/
 php bin/console teamcmp:import-videos flub -p /feed-exports -f flub.yaml
 ```
 
 ## Tests with Symfony PHPUnit Testing Framework
 
-##### Run all tests
 ```
 cd teamcmp-backend-test/
+```
+
+##### Run all tests
+```
 php bin/phpunit 
 ```
 
 ##### Run Functional Command test
 ```
-cd teamcmp-backend-test/
 php bin/phpunit tests/Command/ImportVideosCommandTest.php
 ```
 
 ##### Run Unit test (Check /feed-exports directory and files)
 ```
-cd teamcmp-backend-test/
 php bin/phpunit tests/Utils/FileDataSourceTest.php
 ```
 
 ##### Run Unit test (Check Glorf Json File Schema)
 ```
-cd teamcmp-backend-test/
 php bin/phpunit tests/GlorfFileJsonSchemaTest.php
 ```
-
-
-
-
-
-
-
