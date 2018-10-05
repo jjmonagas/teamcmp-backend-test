@@ -63,3 +63,29 @@ php bin/phpunit tests/Utils/FileDataSourceTest.php
 ```
 php bin/phpunit tests/GlorfFileJsonSchemaTest.php
 ```
+
+## Where to find my code
+
+This is a Symfony4 project with its new directory structure:
+
+* /src -->  Source code
+* /src/Command/ImportVideosCommand.php --> Command line code
+* /src/Model/ --> Interfaces and Data Models
+* /src/Services/ --> Symfony services
+* /src/Utils/ --> Helpers and Factories
+* /tests --> Unit and Functional tests code
+* /feed-exports --> Test files directory
+
+## My first time writing a unit/functional tests, using PHPUnit Testing Framework for Symfony
+
+Thnaks to this framework it was easy to create and run tests. 
+
+
+## What would I have done differently if I had had more time
+
+* I would create a factory or something better to read data form different sources, now it is inside de Command line class (/src/Command/ImportVideosCommand.php)
+* I would add versioning to data source files
+* I would create a new Entity to save Command logs
+* I would add more validation in whole code
+* More tests
+* Create a RabbitMQ server and create a worker that runs this command when detect new files in /feed-exports
