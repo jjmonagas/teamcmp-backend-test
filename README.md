@@ -1,4 +1,4 @@
-# teamcmp-backend-test
+# teamcmp-backend-test  [![Build Status](https://travis-ci.org/jjmonagas/teamcmp-backend-test.svg?branch=master)](https://travis-ci.org/jjmonagas/teamcmp-backend-test)
 
 ## Requirements
 
